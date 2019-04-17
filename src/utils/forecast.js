@@ -16,7 +16,7 @@ request({url,json: true},(err,res) =>{
 });
 }
 
-forecast(17.366,78.466,(err,result) =>{
-     console.log('Error',err);
-     console.log('Result',result);
-});
+
+
+
+module.exports = forecast;
