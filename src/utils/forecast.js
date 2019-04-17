@@ -17,6 +17,4 @@ request({url,json: true},(err,res) =>{
 }
 
 
-
-
 module.exports = forecast;
