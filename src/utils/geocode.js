@@ -27,3 +27,5 @@ geocode('hyderabad',(err,result) =>{
    console.log('error',err)
    console.log('result',result)
 });
+
+module.exports = geocode
