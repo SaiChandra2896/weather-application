@@ -1,5 +1,19 @@
+const hbs = require('hbs');
+const path = require('path');
 const express = require('express');
 const app = express();
+
+//change default path to __dirname to what we wanted or define paths for express config
+const viewpath = path.join(__dirname,'../templates/views');
+const partialspath = path.join(__dirname,'../templates/partials');
+const publicpath = path.join(__dirname,'../public');
+
+//setting view engine to handlebars
+app.set('view engine','hbs');
+app.set('views',viewpath);
+hbs.registerPartials(partialspath)
+
+
 
 const port = process.env.PORT || 8080;
 
