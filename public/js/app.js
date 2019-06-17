@@ -10,7 +10,7 @@ weatherform.addEventListener('submit', (event) => {
     messg1.textContent = 'Loading...'
     messg2.textContent = ''
 
-    fetch('https://weather-by-sai.herokuapp.com/' + location).then((res) => {
+    fetch('https://weather-by-sai.herokuapp.com/weather?address=' + location).then((res) => {
         //fetch allows us to fetch data from API
         res.json().then((data) => {
             if (data.error) {
